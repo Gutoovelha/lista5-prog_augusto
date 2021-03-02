@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+<h2>Caneta</h2><hr>
+<p id="repeticoes"></p>
+
+<script>
+var qtdTinta= parseFloat(prompt("Quantidade de tinta na caneta: "));
+var texto = "";
+var doispc= (2*qtdTinta)/100;
+
+while (qtdTinta>0){
+texto= texto+"Enquanto tem tinta a caneta escreve...<br>";
+
+qtdTinta=qtdTinta-doispc;}
+
+document.getElementById("repeticoes").innerHTML= texto;
+</script>
+
+</body>
+</html>

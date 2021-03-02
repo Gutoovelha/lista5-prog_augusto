@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+<script>
+
+var alunoscom18=[];
+var alunosacimade20=0;
+
+for (var i=1; i<=50; i++){
+var nome= prompt("Digite o nome do aluno "+i+": ");
+var idade= parseInt(prompt("Digite a idade do aluno "+i+": "));
+
+if (idade==18){
+    alunoscom18.push(nome);}
+
+if (idade>20){
+    alunosacimade20++;}
+}
+
+alert("Nome dos alunos com 18 anos: "+alunoscom18.join(", ")+"\n\nQuantidade de alunos com idade acima de 20: "+alunosacimade20);
+</script>
+</head>
+</html>

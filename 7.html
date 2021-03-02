@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+<script>
+var nAlunos= parseInt(prompt("Número de alunos: "));
+var nInscricaomA=0,nInscricaomB=0,alturamA=0,alturamB=200,sAlturas=0;
+
+for (var i=1; i<=nAlunos; i++){
+var nInscricao= parseFloat(prompt("Número de inscrição do aluno "+i+": "));
+var altura= parseInt(prompt("Altura(cm) do aluno "+i+": "));
+
+if (altura>alturamA){
+    nInscricaomA= nInscricao;
+    alturamA= altura;}
+
+if (altura<alturamB){
+    nInscricaomB= nInscricao;
+    alturamB= altura;}
+
+    sAlturas= sAlturas+altura;}
+
+var mediaAltura= sAlturas/nAlunos;
+
+
+alert("Inscrição do aluno mais alto: "+nInscricaomA+"\nAltura do aluno mais alto: "+(alturamA/100)+"m\n\nInscrição do aluno mais baixo: "+nInscricaomB+"\nAltura do aluno mais baixo: "+(alturamB/100)+"m\n\nMédia das alturas: "+(mediaAltura/100)+"m");
+</script>
+</head>
+
+</html>

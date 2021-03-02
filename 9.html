@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+</head>
+<body>
+
+<h2>Números de Y</h2><hr>
+<p id="repeticoes"></p>
+
+<script>
+var texto="";
+
+for (var x=1; x<=5; x+=0.5){
+var y=(3+(2*x)+((6*x)**2))/(1+(9*x)+((16*x)**2));
+
+texto+="Para x = "+x+", Y será: "+y+"<br>";
+
+document.getElementById("repeticoes").innerHTML= texto;}    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+<body>
+
+<script>
+var numero= parseInt(prompt("Número: "));
+var maior=0,menor=Infinity;
+
+if (numero==0){
+alert("Programa encerrado sem analisar valores");}
+
+else{
+while (numero!=0){
+if (numero>maior)
+{maior=numero;}
+
+if (numero<menor)
+{var menor=numero;}
+
+numero= parseInt(prompt("Número: "));
+}
+
+alert("Maior número analisado: "+maior+"\nMenor número analisado: "+menor);}
+</script>
+
+</body>
+</html>

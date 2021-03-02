@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+<script>
+var lNumeros= new Array(), nPares, nImpares;
+
+for (var i=0; i<15; i++){
+var numero= parseInt(prompt("Digite um número: "));
+
+lNumeros.push(numero);}
+
+function pares(numero){
+if (numero%2==0){
+return numero;}}
+
+function impares(numero){
+if (numero%2!=0){ 
+return numero;}}
+
+var nPares = lNumeros.filter(pares);
+var nImpares = lNumeros.filter(impares);
+alert("Números ímpares: "+nImpares+"\nNúmeros pares: "+nPares);
+
+</script>
+</head>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+<script>
+var numeroNegativos= new Array();
+var somaNpositivos=0, NdeNpositivos=0;
+
+for (var i=0; i<20; i++){
+var numero= parseFloat(prompt("Digite um número: "));
+
+if (numero<0){
+numeroNegativos.push(numero);}
+
+else{
+var somaNpositivos= somaNpositivos+numero;
+var NdeNpositivos= NdeNpositivos+1;}}
+
+var mediaNpositivos= somaNpositivos/NdeNpositivos;
+
+alert("Números negativos: "+numeroNegativos+"\nMédia dos números positivos: "+mediaNpositivos);
+
+</script>
+</head>
+</html>

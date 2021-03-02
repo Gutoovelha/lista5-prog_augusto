@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+
+<script>
+var resultado=0, valormax=100;
+
+function fatorar(numeropfatoracao){
+var fatoracao=1;
+
+for (var i=1; i<=numeropfatoracao; i++){
+    fatoracao*=i;}
+
+return fatoracao;
+}
+
+for (var cont=0; cont<20; cont++){
+    resultado+=((valormax-cont)/fatorar(cont));
+}
+
+
+alert("Resultado da série: "+resultado);
+</script>
+</head>
+</html>
